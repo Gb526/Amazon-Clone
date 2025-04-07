@@ -16,34 +16,38 @@ const stripePromise = loadStripe('pk_test_51R03VMC5hoVAHMdnOTsq3T41ogQolckYZuUQx
 function Routing() {
   return (
     <div>
-      <Router>
+      <Router basename="/Amazon-Clone">
         <Routes>
-          <Route path="/" element={<Landing/>}/>
-          <Route path="/auth" element={<Auth/>}/>
-          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/" element={<Landing />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/cart" element={<Cart />} />
 
-          <Route path="/orders" element={<ProtectedRoute 
-          msg={"you must log in to access your orders"}
-          redirect={"/orders"}
-          >
-          <Orders/>
-          </ProtectedRoute>
-          }
+          <Route
+            path="/orders"
+            element={
+              <ProtectedRoute
+                msg={"you must log in to access your orders"}
+                redirect={"/orders"}
+              >
+                <Orders />
+              </ProtectedRoute>
+            }
           />
 
-          <Route path="/category/:categoryName"element={<Results/>}
-          />
-          <Route path="/product/:productId" element={<ProductDetail/>}/>
+          <Route path="/category/:categoryName" element={<Results />} />
+          <Route path="/product/:productId" element={<ProductDetail />} />
 
-          <Route path="/payment"element={
-            <ProtectedRoute 
-            msg={"you must log in to pay"}
-            redirect={"/payment"}
-            >
-            <Elements stripe={stripePromise}>
-              <Payment/>
-            </Elements>
-            </ProtectedRoute>
+          <Route
+            path="/payment"
+            element={
+              <ProtectedRoute
+                msg={"you must log in to pay"}
+                redirect={"/payment"}
+              >
+                <Elements stripe={stripePromise}>
+                  <Payment />
+                </Elements>
+              </ProtectedRoute>
             }
           />
         </Routes>
