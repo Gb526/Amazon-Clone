@@ -1,0 +1,167 @@
+
+.category {
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*padding: 10px;
+  text-align: center;
+    Adds vertical spacing */
+}
+.category img {
+  width: 90%;
+  object-fit: contain;
+  padding: 0px 10px; 
+  max-height: 250px; 
+  
+}
+
+.category a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+  /* display: block; */
+}
+
+.category h2,
+.category p {
+  padding: 5px;
+  margin-left: 15px;
+}
+.category p{
+  font-size: 10px; 
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+}
+
+/* Responsive Grid Container */
+.category__container {
+  position: relative; 
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  /* max-width: 1600px; */
+  place-items: center;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet View */
+/* @media (max-width: 1024px) {
+  .category__container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+
+
+/* Mobile View */
+/* @media (max-width: 768px) {
+  .category__container {
+    grid-template-columns: repeat(auto-fit, 1fr);
+    margin-top: 10px;
+  }
+
+  .category {
+    max-width: 90%; 
+    margin: auto;
+  }
+
+  .category img {
+    max-width: 100%;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ((((((((((((((((((((((((())))))))))))))))))))))))) */
+
+/* .category{
+  height:350px;
+  width: 350px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category img{
+  width: 100%;
+  object-fit:contain;
+  max-width: 250px;
+  padding: 0 10px;
+
+}
+.category a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+/* .category h2{
+
+}
+.category p{
+  padding: 5px;
+  margin-left: 15px ;
+}
+.category p {
+  font-size: 12px;
+  font-weight: bold;
+  color: reb(9, 132, 209);
+
+}
+.category__container {
+  position: relative;
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+
+}
+ */
+
+/* (((((((((((((((((((((((()))))))))))))))))))))))) */
+
+/* .category-card {
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.category-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shop-now {
+  color: #ff9900;
+  font-weight: bold;
+  margin-top: 8px;
+} */
